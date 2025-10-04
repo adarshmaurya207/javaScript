@@ -204,5 +204,6 @@ const user= new Object({
 })
 console.log(user["name"]);
 console.log(user["lang"])
+//my name is adarsh maurya
 
 
