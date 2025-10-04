@@ -202,6 +202,7 @@ const user= new Object({
     'age':33,
     'lang':"Hindi"
 })
-console.log(user.name);
+console.log(user["name"]);
+console.log(user["lang"])
 
 
