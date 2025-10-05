@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Adarsh</h1>
+    <button id="start">start</button>
+    <button id="end">end</button>
+</body>
+<script>
+    function saydate(str){
+        const mydate= Date.now();
+        console.log(`${str}: ${mydate}`);
+    }
+    let si;
+    document.querySelector('#start').
+    addEventListener('click',()=>{
+        if(!si){
+             si=setInterval(saydate,1000,'Time now')
+        }
+    })
+
+    document.querySelector('#end').
+    addEventListener('click',()=>{
+        clearInterval(si);
+        si=null;
+    })
+</script>
+
+</html>
